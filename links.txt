@@ -1,0 +1,2 @@
+http://spamassassin.apache.org/
+this is link to download all spam and non spam mails to extract subjects 
