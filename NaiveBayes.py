@@ -61,13 +61,10 @@ def classifier(subject_line, c_words, c_categories, c_texts, c_tot_words):
         words = list_words(subject_line)
         prob_total_c = prob_c
         for p in words:
-         
             if p in c_words:
                 prob_p= float(c_words[p][c])/float(c_tot_words)
-                prob_cond = prob_p/prob_c
-                prob =(prob_cond * prob_p)/ prob_c
-                prob_total_c = prob_total_c * prob
-
+            	prob_total_c = prob_total_c * prob_p
+		#print ("*" ,prob_p )
             if category_prob < prob_total_c:
                 category = c
                 category_prob = prob_total_c
