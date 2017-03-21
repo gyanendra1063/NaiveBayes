@@ -1,2 +1,3 @@
 http://spamassassin.apache.org/
+http://csmining.org/index.php/ling-spam-datasets.html  ///for testing data
 this is link to download all spam and non spam mails to extract subjects 
