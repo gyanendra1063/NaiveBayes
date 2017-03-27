@@ -1,4 +1,8 @@
 import csv
+import ExtractHam
+import Extractspam
+import ExtractTest1
+import ExtractTest
 
 def list_words(text):
     words = []
@@ -48,6 +52,7 @@ def training(texts):
     print ("total ham mails=" ,c_ham)
     print (c_categories["spam"] , c_categories["nospam"])
     print (c_texts, c_tot_words)
+    print c_words
     return (c_words, c_categories, c_texts, c_tot_words)
 
 
@@ -91,3 +96,4 @@ if __name__ == "__main__":
 	    total+=1
 	eff=float((float(correct)/float(total)))*100	
         print("Efficiency is {0}".format(eff))
+
